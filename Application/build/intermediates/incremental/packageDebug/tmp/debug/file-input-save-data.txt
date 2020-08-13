@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Aug 12 23:00:39 IST 2020
+0.baseType=DIRECTORY
+0.base=/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1
