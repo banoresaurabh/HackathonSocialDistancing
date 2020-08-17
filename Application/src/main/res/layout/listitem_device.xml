@@ -17,6 +17,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
+    
     <TextView android:id="@+id/device_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,5 +29,9 @@
     <TextView android:id="@+id/device_rssi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12dp"/>
+        android:textSize="22dp"/>
+    <TextView android:id="@+id/device_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"/>
 </LinearLayout>

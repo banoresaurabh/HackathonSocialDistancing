@@ -26,7 +26,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
 import android.media.ToneGenerator;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -60,7 +63,7 @@ public class DeviceScanActivity extends ListActivity {
     private Handler mHandler;
 
     private static final int REQUEST_ENABLE_BT = 1;
-    // Stops scanning after 10 seconds.
+    // Stops scanning after 29 minutes.
     private static final long SCAN_PERIOD = 1740000 ;
 
     public static Activity globalContext = null;
@@ -207,11 +210,13 @@ public class DeviceScanActivity extends ListActivity {
     public class DeviceHolder{
         private BluetoothDevice device;
         private int rssi;
+        private double deviceDistance;
 
 
-        public DeviceHolder(BluetoothDevice device, int rssi){
+        public DeviceHolder(BluetoothDevice device, int rssi, double deviceDistance){
             this. device = device;
             this.rssi = rssi;
+            this.deviceDistance = deviceDistance;
         }
         public String getAddress() {
             return device.getAddress();
@@ -224,6 +229,12 @@ public class DeviceScanActivity extends ListActivity {
         }
         public int getRSSI() {
             return rssi;
+        }
+        public void setDistance(double deviceDistance){
+            this.deviceDistance = deviceDistance;
+        }
+        public double getDistance() {
+            return deviceDistance;
         }
     }
 
@@ -243,17 +254,19 @@ public class DeviceScanActivity extends ListActivity {
             mLeDevicesRssi = new HashMap<String, DeviceHolder>();
         }
 
-        public void addDevice(DeviceHolder deviceHolder, int rssi) {
+        public void addDevice(DeviceHolder deviceHolder, int rssi, double deviceDistance) {
             String address = deviceHolder.device.getAddress();
             if(!mLeDevices.contains(deviceHolder.device)) {
-                DeviceHolder cDeviceHolder = new DeviceHolder(deviceHolder.device, deviceHolder.rssi);
+                DeviceHolder cDeviceHolder = new DeviceHolder(deviceHolder.device, deviceHolder.rssi, deviceHolder.deviceDistance);
                 cDeviceHolder.setRSSI(rssi);
+                cDeviceHolder.setDistance(deviceDistance);
                 mLeDevicesRssi.put(address, cDeviceHolder);
                 mLeDevices.add(cDeviceHolder.device);
                 mLeHolders.add(cDeviceHolder);
             }
             else if(mLeDevices.contains(deviceHolder.device)) {
                 mLeDevicesRssi.get(address).setRSSI(rssi);
+                mLeDevicesRssi.get(address).setDistance(deviceDistance);
             }
             mLeDeviceListAdapter.notifyDataSetChanged();
         }
@@ -291,6 +304,7 @@ public class DeviceScanActivity extends ListActivity {
                 viewHolder.deviceAddress = (TextView) view.findViewById(R.id.device_address);
                 viewHolder.deviceName = (TextView) view.findViewById(R.id.device_name);
                 viewHolder.deviceRSSI = (TextView) view.findViewById(R.id.device_rssi);
+                viewHolder.deviceDistance = (TextView) view.findViewById(R.id.device_distance);
                 view.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) view.getTag();
@@ -305,6 +319,7 @@ public class DeviceScanActivity extends ListActivity {
                 viewHolder.deviceName.setText(R.string.unknown_device);
             viewHolder.deviceAddress.setText(device.getAddress());
             viewHolder.deviceRSSI.setText(Integer.toString(mLeDevicesRssi.get(device.getAddress()).rssi));
+            viewHolder.deviceDistance.setText(Double.toString(mLeDevicesRssi.get(device.getAddress()).deviceDistance));
 
             return view;
         }
@@ -315,29 +330,39 @@ public class DeviceScanActivity extends ListActivity {
 
                 @Override
                 public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
-                    DeviceHolder deviceHolder = new DeviceHolder(device, rssi);
+                    DeviceHolder deviceHolder = new DeviceHolder(device, rssi, getDistance(rssi, (int) scanRecord[29]));
                     final int new_rssi = rssi;
-                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi ) );
+                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi) );
                 }
             };
 
     class DeviceAddTask implements Runnable {
         DeviceHolder deviceHolder;
 
-        public DeviceAddTask( DeviceHolder deviceHolder, int rssi ) {
+        public DeviceAddTask( DeviceHolder deviceHolder, int rssi) {
             this.deviceHolder = deviceHolder;
             this.deviceHolder.rssi = rssi;
+            this.deviceHolder.deviceDistance = deviceHolder.deviceDistance;
         }
 
         public void run() {
 
-            if(deviceHolder.rssi > -60) {
-                ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
-                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
-                toneGen1.release();
-                toneGen1 = null;
+            if(deviceHolder.rssi > -50) {
+            //if(deviceHolder.deviceDistance < 300) {
+
+//                ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
+//                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
+//                toneGen1.release();
+//                toneGen1 = null;
+                try {
+                    Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                    Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+                    r.play();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
-            mLeDeviceListAdapter.addDevice(deviceHolder, deviceHolder.rssi);
+            mLeDeviceListAdapter.addDevice(deviceHolder, deviceHolder.rssi, deviceHolder.deviceDistance);
             mLeDeviceListAdapter.notifyDataSetChanged();
         }
     }
@@ -357,6 +382,7 @@ public class DeviceScanActivity extends ListActivity {
         TextView deviceName;
         TextView deviceAddress;
         TextView deviceRSSI;
+        TextView deviceDistance;
     }
 
 }
