@@ -25,6 +25,7 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -44,6 +45,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -61,17 +63,21 @@ public class DeviceScanActivity extends ListActivity {
     private BluetoothAdapter mBluetoothAdapter;
     private boolean mScanning;
     private Handler mHandler;
+    private ArrayList<String> whiteListedDevices;
 
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 29 minutes.
     private static final long SCAN_PERIOD = 1740000 ;
 
     public static Activity globalContext = null;
-
+    DbUtility dbUtility;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        initDevicesList();
         getActionBar().setTitle(R.string.title_devices);
         mHandler = new Handler();
 
@@ -104,6 +110,19 @@ public class DeviceScanActivity extends ListActivity {
 
         }
 
+    }
+
+    public void initDevicesList(){
+        dbUtility = new DbUtility(this);
+        Cursor res = dbUtility.getCred();
+        whiteListedDevices = new ArrayList<String>();
+
+        res.moveToFirst();
+        while(!res.isAfterLast()) {
+            whiteListedDevices.add(res.getString(res.getColumnIndex("device_mac_id")));
+            res.moveToNext();
+        }
+        Log.d("DatabaseHandler", Integer.toString(whiteListedDevices.size()));
     }
 
 
@@ -305,13 +324,36 @@ public class DeviceScanActivity extends ListActivity {
                 viewHolder.deviceName = (TextView) view.findViewById(R.id.device_name);
                 viewHolder.deviceRSSI = (TextView) view.findViewById(R.id.device_rssi);
                 viewHolder.deviceDistance = (TextView) view.findViewById(R.id.device_distance);
+
                 view.setTag(viewHolder);
             } else {
                 viewHolder = (ViewHolder) view.getTag();
             }
 
-            BluetoothDevice device = mLeDevices.get(i);
+
+
+            final BluetoothDevice device = mLeDevices.get(i);
             final String deviceName = device.getName();
+
+            final Button whiteListBtn = (Button) view.findViewById(R.id.whitelist_btn);
+            whiteListBtn.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    if(whiteListedDevices.contains(device.getAddress().toString())){
+                        whiteListBtn.setText("Add to Whitelist");
+                        dbUtility.delete(device.getAddress().toString());
+                        Log.d("DatabaseHandler", "Deleted the device with mac_id" + device.getAddress().toString());
+                    }else{
+                        whiteListBtn.setText("Remove From Whitelist");
+                        dbUtility.insert(device.getAddress().toString());
+                        Log.d("DatabaseHandler", "Added the device with mac_id" + device.getAddress().toString());
+                    }
+                    initDevicesList();
+                }
+
+            });
 
             if (deviceName != null && deviceName.length() > 0)
                 viewHolder.deviceName.setText(deviceName);
@@ -320,6 +362,11 @@ public class DeviceScanActivity extends ListActivity {
             viewHolder.deviceAddress.setText(device.getAddress());
             viewHolder.deviceRSSI.setText(Integer.toString(mLeDevicesRssi.get(device.getAddress()).rssi));
             viewHolder.deviceDistance.setText(Double.toString(mLeDevicesRssi.get(device.getAddress()).deviceDistance));
+            if (whiteListedDevices.contains(device.getAddress().toString())) {
+                whiteListBtn.setText("Remove From Whitelist");
+            } else {
+                whiteListBtn.setText("Add to Whitelist");
+            }
 
             return view;
         }
@@ -347,7 +394,7 @@ public class DeviceScanActivity extends ListActivity {
 
         public void run() {
 
-            if(deviceHolder.rssi > -50) {
+            if(deviceHolder.rssi > -50 && !whiteListedDevices.contains(deviceHolder.device.getAddress())) {
             //if(deviceHolder.deviceDistance < 300) {
 
 //                ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
