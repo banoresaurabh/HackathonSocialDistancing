@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
+            "outputFile": "/Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
-                    "source": "/Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/res/values-fr/values-fr.xml",
+                    "source": "/Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/res/values-fr/values-fr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/res/values-fr/values-fr.xml",
+                    "source": "/Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/res/values-fr/values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

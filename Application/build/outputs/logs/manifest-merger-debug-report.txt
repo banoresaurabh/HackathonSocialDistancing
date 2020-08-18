@@ -1,199 +1,204 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:1-57:12
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:1-57:12
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:1-57:12
-MERGED from [com.android.support:support-v13:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/5e56e4ba951787745cef25b6cae5bc41/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6bb214777b0d4593f33bb8e944c63853/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e28c9f7d415ab24f6c5973d73e4a1705/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/98e8042f9e30f726fed29e3fbae3865b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6885871e1e46fa8b381a10035bd7c164/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d78aa497d62accacccf5b3cdf8b07b36/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/db38af4f888425b0bd2d42a6f8f6933d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/f2f95bcf1276d1f8e5fe821ac9b56676/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/00b95271872cb0ab9764a1c310264e87/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/1c564c3279f73f956cb6668641592c84/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/0d827804e06a56a6fbf2055c9ae5c1ef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d16656f3ec6c5cb1ae8a5234e92fc8ca/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e7beaf38943d20d389c3d92f83b365ed/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8140bc81e26909c276f8b7bdfebf7eb7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e8a63a3d2f77b19fc53e4b6823509bc9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/cd1841cd25fb78bf35112a50fa607e36/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/b73e8fa76df30f9a1598b0d5f46684d6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ba3ca902ab900fae2af8e6339563178c/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/23fe5871b551034e5dcc9f05ce400d6c/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/2551f00a2b21aaf81a782acb42cf3bc0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e716de250ab584f839362d8e4b9f2d7b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ef6ed06197c3950d35efc6dbaa2b83be/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/858c627de4a3dbe747d9665c94e56584/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/25b561990d7357d3bc2ebcafabfaeb59/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/76e3e5cd3a1c6d20c0c889af953c7a69/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8fc1fd65aeb88b3b915cc3134bc09848/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/edc75e755f13fcdfe1a7d94f008cc734/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/17f98431ec7a8181cbe42f50f3a09aa4/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:1-57:12
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:1-57:12
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:1-62:12
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:1-62:12
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:1-62:12
+MERGED from [com.android.support:support-v13:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/8ada9f134038a9231983b1d9df57a992/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/5b6854f22d93927c224cec28b02429fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/ec1516fc2e00c73b83a6a080ff4b0548/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/badc6e704c7b7ba93704e27cfcc8dda7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/80e3929d6cb0bca769ed1d883e144ee2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0642002d8bbe8d4d04ffe63c85e7c8bc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f502556f5a39d7083c841375f33f0fbc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/1cfacb0ad66977ebcbb0fa19246026f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/54c38c66cf2768fd26df888fb9638961/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/d0617cc2a5a983f2c916c5bb93c6d91a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/071343964d83f123f1a2b207c7f64bfd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0a73cae176f8634bcfeeec7ef267d39a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a6db69da78091a40565a7a1d1be9eef0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/cf0efeefc260637f74c84d2cf8318c3d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/bbdadbf82abee1fcd33052562072ee47/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/fb265965694c9658da36ca5e3f99b164/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f83bd17be5733bc96bc9666adfef4dd1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/17df1907e8c9a502f9feca8d75d33c2a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2b1649c132cddee5bba4f36345c7cbaa/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0501611df7479edc533473c6a6acf941/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2ed5c28deac81a794227b05468831c07/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/082497b26495a312c8ff8ab2032932df/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/182e1d68ebf2668cf53f2dc10d0bf497/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a20e6835cc0330fb90f1da7385bb0f5f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/29c78761f0929c69fbd5bcf38a3e38ea/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/48f1e1fdf873a24a54eeb670c9c71015/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/7c033916c2a2ab3251979e2c4420ebd3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/746e5b58896737e620f18f223dad65c8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/41a1f2898f7d3eba1a3ee585787abd14/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:1-62:12
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:1-62:12
 	package
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:21:5-50
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:21:5-50
 	android:versionName
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:23:5-30
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:23:5-30
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:20:11-69
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:20:11-69
 	android:versionCode
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:22:5-28
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:22:5-28
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:31:5-89
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:31:5-89
 	android:required
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:31:64-87
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:31:64-87
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:31:19-63
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:31:19-63
 uses-feature#android.hardware.location
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:32:5-85
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:32:5-85
 	android:required
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:32:60-83
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:32:60-83
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:32:19-59
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:32:19-59
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:33:5-66
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:33:5-66
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:33:22-63
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:33:22-63
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:36:5-67
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:36:5-67
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:36:22-65
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:36:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:37:5-73
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:37:5-73
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:37:22-71
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:37:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:39:5-78
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:39:5-78
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:39:22-76
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:39:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:40:5-80
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:40:5-80
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:40:22-78
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:40:22-78
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:41:5-85
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:41:5-85
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:41:22-82
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:41:22-82
 application
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:43:5-55:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ba3ca902ab900fae2af8e6339563178c/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ba3ca902ab900fae2af8e6339563178c/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:43:5-60:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/badc6e704c7b7ba93704e27cfcc8dda7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/badc6e704c7b7ba93704e27cfcc8dda7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2b1649c132cddee5bba4f36345c7cbaa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2b1649c132cddee5bba4f36345c7cbaa/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:46:9-37
 	android:label
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:43:18-50
-	android:icon
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:44:9-45
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:43:18-50
+	android:roundIcon
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:45:9-52
+	android:allowBackup
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:44:9-37
 	android:theme
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:45:9-56
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:47:9-42
 activity#com.example.android.bluetoothlegatt.DeviceScanActivity
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:46:9-52:20
-	android:label
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:47:13-45
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:53:9-58:20
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:46:19-53
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:53:19-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:48:13-51:29
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:54:13-57:29
 action#android.intent.action.MAIN
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:49:17-68
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:55:17-68
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:50:17-76
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:56:17-76
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:50:27-74
-activity#com.example.android.bluetoothlegatt.DeviceControlActivity
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:53:9-58
-	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:53:19-56
-service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:54:9-77
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:56:27-74
+service#com.example.android.bluetoothlegatt.BLService
+ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:59:9-97
 	android:enabled
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:54:53-75
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:59:44-66
+	android:stopWithTask
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:59:67-95
 	android:name
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml:54:18-52
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml:59:18-43
 uses-sdk
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-MERGED from [com.android.support:support-v13:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/5e56e4ba951787745cef25b6cae5bc41/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v13:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/5e56e4ba951787745cef25b6cae5bc41/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6bb214777b0d4593f33bb8e944c63853/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6bb214777b0d4593f33bb8e944c63853/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e28c9f7d415ab24f6c5973d73e4a1705/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e28c9f7d415ab24f6c5973d73e4a1705/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/98e8042f9e30f726fed29e3fbae3865b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/98e8042f9e30f726fed29e3fbae3865b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6885871e1e46fa8b381a10035bd7c164/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/6885871e1e46fa8b381a10035bd7c164/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d78aa497d62accacccf5b3cdf8b07b36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d78aa497d62accacccf5b3cdf8b07b36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/db38af4f888425b0bd2d42a6f8f6933d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/db38af4f888425b0bd2d42a6f8f6933d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/f2f95bcf1276d1f8e5fe821ac9b56676/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/f2f95bcf1276d1f8e5fe821ac9b56676/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/00b95271872cb0ab9764a1c310264e87/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/00b95271872cb0ab9764a1c310264e87/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/1c564c3279f73f956cb6668641592c84/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/1c564c3279f73f956cb6668641592c84/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/0d827804e06a56a6fbf2055c9ae5c1ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/0d827804e06a56a6fbf2055c9ae5c1ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d16656f3ec6c5cb1ae8a5234e92fc8ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/d16656f3ec6c5cb1ae8a5234e92fc8ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e7beaf38943d20d389c3d92f83b365ed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e7beaf38943d20d389c3d92f83b365ed/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8140bc81e26909c276f8b7bdfebf7eb7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8140bc81e26909c276f8b7bdfebf7eb7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e8a63a3d2f77b19fc53e4b6823509bc9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e8a63a3d2f77b19fc53e4b6823509bc9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/cd1841cd25fb78bf35112a50fa607e36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/cd1841cd25fb78bf35112a50fa607e36/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/b73e8fa76df30f9a1598b0d5f46684d6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/b73e8fa76df30f9a1598b0d5f46684d6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/48e811c4ce0bac4bb5a113bb5579723d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ba3ca902ab900fae2af8e6339563178c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ba3ca902ab900fae2af8e6339563178c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/23fe5871b551034e5dcc9f05ce400d6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/23fe5871b551034e5dcc9f05ce400d6c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/2551f00a2b21aaf81a782acb42cf3bc0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/2551f00a2b21aaf81a782acb42cf3bc0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e716de250ab584f839362d8e4b9f2d7b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/e716de250ab584f839362d8e4b9f2d7b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ef6ed06197c3950d35efc6dbaa2b83be/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/ef6ed06197c3950d35efc6dbaa2b83be/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/858c627de4a3dbe747d9665c94e56584/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/858c627de4a3dbe747d9665c94e56584/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/25b561990d7357d3bc2ebcafabfaeb59/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/25b561990d7357d3bc2ebcafabfaeb59/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/76e3e5cd3a1c6d20c0c889af953c7a69/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/76e3e5cd3a1c6d20c0c889af953c7a69/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8fc1fd65aeb88b3b915cc3134bc09848/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/8fc1fd65aeb88b3b915cc3134bc09848/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/edc75e755f13fcdfe1a7d94f008cc734/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/edc75e755f13fcdfe1a7d94f008cc734/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/17f98431ec7a8181cbe42f50f3a09aa4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/17f98431ec7a8181cbe42f50f3a09aa4/AndroidManifest.xml:20:5-44
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/8ada9f134038a9231983b1d9df57a992/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/8ada9f134038a9231983b1d9df57a992/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/5b6854f22d93927c224cec28b02429fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/5b6854f22d93927c224cec28b02429fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/ec1516fc2e00c73b83a6a080ff4b0548/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/ec1516fc2e00c73b83a6a080ff4b0548/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/badc6e704c7b7ba93704e27cfcc8dda7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/badc6e704c7b7ba93704e27cfcc8dda7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/80e3929d6cb0bca769ed1d883e144ee2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/80e3929d6cb0bca769ed1d883e144ee2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0642002d8bbe8d4d04ffe63c85e7c8bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0642002d8bbe8d4d04ffe63c85e7c8bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f502556f5a39d7083c841375f33f0fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f502556f5a39d7083c841375f33f0fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/1cfacb0ad66977ebcbb0fa19246026f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/1cfacb0ad66977ebcbb0fa19246026f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/54c38c66cf2768fd26df888fb9638961/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/54c38c66cf2768fd26df888fb9638961/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/d0617cc2a5a983f2c916c5bb93c6d91a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/d0617cc2a5a983f2c916c5bb93c6d91a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/071343964d83f123f1a2b207c7f64bfd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/071343964d83f123f1a2b207c7f64bfd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0a73cae176f8634bcfeeec7ef267d39a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0a73cae176f8634bcfeeec7ef267d39a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a6db69da78091a40565a7a1d1be9eef0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a6db69da78091a40565a7a1d1be9eef0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/cf0efeefc260637f74c84d2cf8318c3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/cf0efeefc260637f74c84d2cf8318c3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/bbdadbf82abee1fcd33052562072ee47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/bbdadbf82abee1fcd33052562072ee47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/fb265965694c9658da36ca5e3f99b164/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/fb265965694c9658da36ca5e3f99b164/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f83bd17be5733bc96bc9666adfef4dd1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/f83bd17be5733bc96bc9666adfef4dd1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/17df1907e8c9a502f9feca8d75d33c2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/17df1907e8c9a502f9feca8d75d33c2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/9715ab4c87ceba89d7d7d52d341db91d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2b1649c132cddee5bba4f36345c7cbaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2b1649c132cddee5bba4f36345c7cbaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0501611df7479edc533473c6a6acf941/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0501611df7479edc533473c6a6acf941/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2ed5c28deac81a794227b05468831c07/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/2ed5c28deac81a794227b05468831c07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/082497b26495a312c8ff8ab2032932df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/082497b26495a312c8ff8ab2032932df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/182e1d68ebf2668cf53f2dc10d0bf497/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/182e1d68ebf2668cf53f2dc10d0bf497/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a20e6835cc0330fb90f1da7385bb0f5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/a20e6835cc0330fb90f1da7385bb0f5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/29c78761f0929c69fbd5bcf38a3e38ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/29c78761f0929c69fbd5bcf38a3e38ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/48f1e1fdf873a24a54eeb670c9c71015/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/48f1e1fdf873a24a54eeb670c9c71015/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/7c033916c2a2ab3251979e2c4420ebd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/7c033916c2a2ab3251979e2c4420ebd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/746e5b58896737e620f18f223dad65c8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/746e5b58896737e620f18f223dad65c8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/41a1f2898f7d3eba1a3ee585787abd14/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mnishsha/.gradle/caches/transforms-2/files-2.1/41a1f2898f7d3eba1a3ee585787abd14/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		ADDED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
-		INJECTED from /Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/AndroidManifest.xml
