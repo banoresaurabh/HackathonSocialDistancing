@@ -174,6 +174,12 @@ public class DeviceScanActivity extends ListActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        startService(new Intent(DeviceScanActivity.this,BLService.class));
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // User chose not to enable Bluetooth.
         if (requestCode == REQUEST_ENABLE_BT && resultCode == Activity.RESULT_CANCELED) {
