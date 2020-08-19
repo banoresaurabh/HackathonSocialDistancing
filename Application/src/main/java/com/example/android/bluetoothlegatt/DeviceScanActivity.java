@@ -74,6 +74,7 @@ public class DeviceScanActivity extends ListActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        startService(new Intent(DeviceScanActivity.this,AdvService.class));
         super.onCreate(savedInstanceState);
 
 
