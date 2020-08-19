@@ -38,6 +38,7 @@ import android.os.Looper;
 import android.os.VibrationEffect;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -52,8 +53,11 @@ import android.widget.Toast;
 import android.os.Vibrator;
 
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Activity for scanning and displaying available Bluetooth LE devices.
@@ -68,6 +72,7 @@ public class DeviceScanActivity extends ListActivity {
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 29 minutes.
     private static final long SCAN_PERIOD = 1740000 ;
+    private static final String SOCIAL_D_UUID = "-320-66-84-1242-1112-1268277-14-99-121-10181";
 
     public static Activity globalContext = null;
     DbUtility dbUtility;
@@ -379,22 +384,29 @@ public class DeviceScanActivity extends ListActivity {
                 public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
                     DeviceHolder deviceHolder = new DeviceHolder(device, rssi, getDistance(rssi, (int) scanRecord[29]));
                     final int new_rssi = rssi;
-                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi) );
+
+                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi, scanRecord) );
                 }
             };
 
     class DeviceAddTask implements Runnable {
         DeviceHolder deviceHolder;
+        byte[] scanRecord;
 
-        public DeviceAddTask( DeviceHolder deviceHolder, int rssi) {
+        public DeviceAddTask( DeviceHolder deviceHolder, int rssi, byte[] scanRecord) {
             this.deviceHolder = deviceHolder;
             this.deviceHolder.rssi = rssi;
             this.deviceHolder.deviceDistance = deviceHolder.deviceDistance;
+            this.scanRecord = scanRecord;
         }
 
         public void run() {
 
-            if(deviceHolder.rssi > -50 && !whiteListedDevices.contains(deviceHolder.device.getAddress())) {
+            //printScanRecord(scanRecord);
+            //!whiteListedDevices.contains(deviceHolder.device.getAddress())
+            if(deviceHolder.rssi > -50 && socialDistancingUUID(generateUUID(scanRecord))) {
+                Log.d("UUID",generateUUID(scanRecord));
+                //Log.d("UUIDs", deviceHolder.device.getUuids().toString());
             //if(deviceHolder.deviceDistance < 300) {
 
 //                ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
@@ -409,8 +421,95 @@ public class DeviceScanActivity extends ListActivity {
                     e.printStackTrace();
                 }
             }
-            mLeDeviceListAdapter.addDevice(deviceHolder, deviceHolder.rssi, deviceHolder.deviceDistance);
-            mLeDeviceListAdapter.notifyDataSetChanged();
+            if(socialDistancingUUID(generateUUID(scanRecord))){
+                mLeDeviceListAdapter.addDevice(deviceHolder, deviceHolder.rssi, deviceHolder.deviceDistance);
+                mLeDeviceListAdapter.notifyDataSetChanged();
+            }
+
+        }
+    }
+
+    boolean socialDistancingUUID(String uuid) {
+        return SOCIAL_D_UUID.equals(uuid);
+    }
+
+    String generateUUID(byte[] scanRecord){
+        String UUID = "";
+        for(int i = 2; i <= 17; i++){
+            UUID += scanRecord[i];
+        }
+        return UUID;
+    }
+
+    public void printScanRecord (byte[] scanRecord) {
+
+        // Simply print all raw bytes
+        try {
+            String decodedRecord = new String(scanRecord,"UTF-8");
+            Log.d("DEBUG","decoded String : " + ByteArrayToString(scanRecord));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        // Parse data bytes into individual records
+        List<AdRecord> records = AdRecord.parseScanRecord(scanRecord);
+
+
+        // Print individual records
+        if (records.size() == 0) {
+            Log.i("DEBUG", "Scan Record Empty");
+        } else {
+            Log.i("DEBUG", "Scan Record: " + TextUtils.join(",", records));
+        }
+
+    }
+
+    public static String ByteArrayToString(byte[] ba)
+    {
+        StringBuilder hex = new StringBuilder(ba.length * 2);
+        for (byte b : ba)
+            hex.append(b + " ");
+
+        return hex.toString();
+    }
+
+    public static class AdRecord {
+
+        public AdRecord(int length, int type, byte[] data) {
+            String decodedRecord = "";
+            try {
+                decodedRecord = new String(data, "UTF-8");
+
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            Log.d("DEBUG", "Length: " + length + " Type : " + type + " Data : " + ByteArrayToString(data));
+        }
+
+        // ...
+
+        public static List<AdRecord> parseScanRecord(byte[] scanRecord) {
+            List<AdRecord> records = new ArrayList<AdRecord>();
+
+            int index = 0;
+            while (index < scanRecord.length) {
+                int length = scanRecord[index++];
+                //Done once we run out of records
+                if (length == 0) break;
+
+                int type = scanRecord[index];
+                //Done if our record isn't a valid type
+                if (type == 0) break;
+
+                byte[] data = Arrays.copyOfRange(scanRecord, index + 1, index + length);
+
+                records.add(new AdRecord(length, type, data));
+                //Advance
+                index += length;
+            }
+
+            return records;
         }
     }
 
