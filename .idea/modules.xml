@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" group="HackathonSocialDistancing/Application" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HackathonSocialDistancing.iml" filepath="$PROJECT_DIR$/.idea/modules/HackathonSocialDistancing.iml" group="HackathonSocialDistancing" />
+      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" group="BluetoothLeGatt/Application" />
+      <module fileurl="file://$PROJECT_DIR$/BluetoothLeGatt.iml" filepath="$PROJECT_DIR$/BluetoothLeGatt.iml" group="BluetoothLeGatt" />
     </modules>
   </component>
 </project>

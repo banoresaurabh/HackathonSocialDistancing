@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/res/values-sw600dp/template-styles.xml",
+                    "source": "/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/res/values-sw600dp/template-dimens.xml",
+                    "from": {
+                        "startLines": "20,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "656,724",
+                        "endColumns": "67,67",
+                        "endOffsets": "719,787"
+                    },
+                    "to": {
+                        "startLines": "10,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "611,679",
+                        "endColumns": "67,67",
+                        "endOffsets": "674,742"
+                    }
+                },
+                {
+                    "source": "/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/src/main/res/values-sw600dp/template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
@@ -23,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/src/main/res/values-sw600dp/template-dimens.xml",
-                    "from": {
-                        "startLines": "20,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "656,724",
-                        "endColumns": "67,67",
-                        "endOffsets": "719,787"
-                    },
-                    "to": {
-                        "startLines": "10,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "611,679",
-                        "endColumns": "67,67",
-                        "endOffsets": "674,742"
-                    }
-                },
-                {
-                    "source": "/Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

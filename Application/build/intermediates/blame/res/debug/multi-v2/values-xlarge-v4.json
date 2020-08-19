@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mnishsha/StudioProjects/HackathonSocialDistancing/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "/Users/banoresaurabh/Documents/Projects/connectivity-samples/BluetoothLeGatt/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/mnishsha/.gradle/caches/transforms-2/files-2.1/0e637f41b00a6544a67e40c4e066d22e/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/banoresaurabh/.gradle/caches/transforms-2/files-2.1/24d2a9800d922b4104d4eb791031bd07/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

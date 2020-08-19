@@ -72,8 +72,6 @@ public class DeviceScanActivity extends ListActivity {
     public static Activity globalContext = null;
     DbUtility dbUtility;
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,13 +157,6 @@ public class DeviceScanActivity extends ListActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        startService(new Intent(DeviceScanActivity.this,BLService.class));
-        System.out.println("This is destroyed");
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
 
@@ -192,6 +183,12 @@ public class DeviceScanActivity extends ListActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        scanLeDevice(false);
+//        mLeDeviceListAdapter.clear();
+//    }
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -229,7 +226,7 @@ public class DeviceScanActivity extends ListActivity {
         invalidateOptionsMenu();
     }
 
-    public static class DeviceHolder{
+    public class DeviceHolder{
         private BluetoothDevice device;
         private int rssi;
         private double deviceDistance;
@@ -382,7 +379,7 @@ public class DeviceScanActivity extends ListActivity {
                 public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
                     DeviceHolder deviceHolder = new DeviceHolder(device, rssi, getDistance(rssi, (int) scanRecord[29]));
                     final int new_rssi = rssi;
-                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi ) );
+                    runOnUiThread(new DeviceAddTask( deviceHolder, new_rssi) );
                 }
             };
 
@@ -398,7 +395,7 @@ public class DeviceScanActivity extends ListActivity {
         public void run() {
 
             if(deviceHolder.rssi > -50 && !whiteListedDevices.contains(deviceHolder.device.getAddress())) {
-                //if(deviceHolder.deviceDistance < 300) {
+            //if(deviceHolder.deviceDistance < 300) {
 
 //                ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
 //                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
