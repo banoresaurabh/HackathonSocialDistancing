@@ -72,7 +72,7 @@ public class DeviceScanActivity extends ListActivity {
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 29 minutes.
     private static final long SCAN_PERIOD = 1740000 ;
-    private static final String SOCIAL_D_UUID = "-320-66-84-1242-1112-1268277-14-99-121-10181";
+    private static final String SOCIAL_D_UUID = "-320-66-84127-814-77-105-12572-83-83-121-122-102";
 
     public static Activity globalContext = null;
     DbUtility dbUtility;
@@ -343,29 +343,29 @@ public class DeviceScanActivity extends ListActivity {
             }
 
 
-
             final BluetoothDevice device = mLeDevices.get(i);
             final String deviceName = device.getName();
 
             final Button whiteListBtn = (Button) view.findViewById(R.id.whitelist_btn);
-            whiteListBtn.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    if(whiteListedDevices.contains(device.getAddress().toString())){
-                        whiteListBtn.setText("Add to Whitelist");
-                        dbUtility.delete(device.getAddress().toString());
-                        Log.d("DatabaseHandler", "Deleted the device with mac_id" + device.getAddress().toString());
-                    }else{
-                        whiteListBtn.setText("Remove From Whitelist");
-                        dbUtility.insert(device.getAddress().toString());
-                        Log.d("DatabaseHandler", "Added the device with mac_id" + device.getAddress().toString());
-                    }
-                    initDevicesList();
-                }
-
-            });
+            whiteListBtn.setVisibility(View.INVISIBLE);
+//            whiteListBtn.setOnClickListener(new View.OnClickListener()
+//            {
+//                @Override
+//                public void onClick(View v)
+//                {
+//                    if(whiteListedDevices.contains(device.getAddress().toString())){
+//                        whiteListBtn.setText("Add to Whitelist");
+//                        dbUtility.delete(device.getAddress().toString());
+//                        Log.d("DatabaseHandler", "Deleted the device with mac_id" + device.getAddress().toString());
+//                    }else{
+//                        whiteListBtn.setText("Remove From Whitelist");
+//                        dbUtility.insert(device.getAddress().toString());
+//                        Log.d("DatabaseHandler", "Added the device with mac_id" + device.getAddress().toString());
+//                    }
+//                    initDevicesList();
+//                }
+//
+//            });
 
             if (deviceName != null && deviceName.length() > 0)
                 viewHolder.deviceName.setText(deviceName);
@@ -411,8 +411,9 @@ public class DeviceScanActivity extends ListActivity {
 
             //printScanRecord(scanRecord);
             //!whiteListedDevices.contains(deviceHolder.device.getAddress())
-            if(deviceHolder.rssi > -50 && socialDistancingUUID(generateUUID(scanRecord))) {
-                Log.d("UUID",generateUUID(scanRecord));
+            Log.d("UUID",generateUUID(scanRecord));
+            if(deviceHolder.rssi > -65 && socialDistancingUUID(generateUUID(scanRecord))) {
+
                 //Log.d("UUIDs", deviceHolder.device.getUuids().toString());
             //if(deviceHolder.deviceDistance < 300) {
 
@@ -441,10 +442,12 @@ public class DeviceScanActivity extends ListActivity {
     }
 
     String generateUUID(byte[] scanRecord){
+
         String UUID = "";
         for(int i = 2; i <= 17; i++){
             UUID += scanRecord[i];
         }
+        Log.d("Hey here", UUID);
         return UUID;
     }
 
